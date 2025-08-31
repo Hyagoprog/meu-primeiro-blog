@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog do Hyago</title>
+    <style>
+        body{ background-color: black;color: white;}
+        h1{background-color: white;color:black;}
+        h2{ background-color: white; color: black;}
+        p{ font-size: large; color: white;}
+        table{background-color: white;color: black;}
+        th{background-color: green;}
+         nav {
+      background-color: #333;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .menu {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      margin-right: 20px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+    }
+
+    .menu a:hover {
+      background-color: #555;
+    }
+
+    
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      margin: 4px 0;
+    }
+    @media ( max-width:768px){ 
+        .menu{ display: none; flex-direction: column;
+        background-color: #333;
+    width: 100%;}
+    .menu.show{ display: flex;}
+    .hamburger{ display: flex;}
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="pag01.html">Inicio</a></li>
+            <li><a href="libertadores.html">Libertadores</a></li>
+            <li><a href="sulamericana.html">Sulamericana</a></li>
+            <li><a href="tabela.html">TABELA DO BRASILEIRAO</a></li>
+        </ul>
+    </nav>
+    
+
+
+
+    <h1 style="text-align: center;">BRASILEIRAO <img src="brasileirao/taca-brasileirao-serie-a-logo-png_seeklogo-577657.png" width="50px"></h1>
+    <img src="brasileirao/flamengo.webp" alt="Flamengo" width="250px">
+    <p style="font-size: large;">O Flamengo, atual lider do brasileirao, <br>veio de uma conquista brilhante que resultou em um placar de 8x0 contra o time de Vitoria.
+        O flamengo volta em campo no dia 31/08, <br> contra o Gremio no maracana.
+    </p>
+    <div style="text-align: end;"><img src="brasileirao/palmeiras.jpg" alt="palmeiras"></div>
+    <p style="text-align: end;"> Palmeiras vem de uma grande vitoria contrao Sport de 3x0, <br> jogando em casa o alviverde foi dominante o tempo todo e conseguiu um belo placar. <br> O time alviverde volta ao campo contra o corinthians</p>
+    <img src="brasileirao/cruzeiro.jpg" alt="cruzeiro">
+    <p>O Cruzeiro venceu o internacional, <br>dentro de casa com os gols de Kaio Jorge (principal artilheiro do Brasileirao com 15 gols). <br>
+        O cabuloso volta a jogar contra o Sao Paulo no dia 30/08.
+    </p>
+<div style="text-align:right;"><img src="brasileirao/bahia.jpg" alt="bahia"> </div>
+<p style="text-align: end;">Bahia por sua vez vem em seu melhor desempenho,com seu quarto lugar no brasileirao e vem de um resultado bom diante do Santos por um placar de 2x0,<br>  sem o Neymar em campo, o Bahia conquistou um belo placar. Bahia volta a jogar contra a forte equipe do Mirassol.
+</p>
+<h2 style="text-align: center;"> Z4</h2>
+<img src="brasileirao/vitoria.jpg" alt="vitoria">
+<p style="font-size: large;">Vitoria que esta em decimo setimo lugar no Brasileirao, <br>o Vitoria que viajou a maracana para enfrentar o flamengo mas levou a pior e ficou marcado na historia como a maior goleada sofrida na historia. <br>O time precisa fazer uma reviravolta para sair dessa zona de rebaixamento e com isso  precisar ganhar o proximo jogo que é contra o Atletico-mg, em casa.
+</p>
+<div style="text-align:end;"><img src="brasileirao/juventude.jpg" alt="juventude"></div>
+<p style="text-align: end; font-size: large;">O Juventude esta n o decimo oitavo lugar, numa posicao bem critica e que para sair vai precisar dele e dos outros times tb <br>, o juventude vem de uma derrota dentro de casa contra o botafogo por 3x1 que isso implica ainda mais do time <br> sair da zona de rebaixamento. <br> O Juventude volta a jogar contra o Ceara, fora de casa mas precisa ganhar esse jogo para sair da zona de rebaixamento.
+</p>
+<img src="brasileirao/fortaleza.jpg" alt="fortaleza">
+<p style="font-size: large;"> O time de fortaleza vem em uma decrescente constante, estava indo "bem" na <a href="libertadores.html">libertadores</a> mas depois que deixou a competicoes ja estava na zona do rebaixamento <br> e ate agora nao esboçaram nenhuma reaçao <br> vem de uma derrota pro Mirassol e so esta cada vez mais perto da Serie B.<br>O time de fortal, vai encarar o internacional no Beira Rio no dia 31/08 as 20h30</p>
+<div style="text-align:right;"><img src="brasileirao/sport recife.jpg" alt="sport"></div> <p style="text-align:end; font-size: large; " > O Sport de Recife, esta matematicamente rebaixado, mas o  time continua brigando com o que tem para nao cair,<br> por sua vez o time visitou o vice lider do campeonato e perdeu de 3x0, e com isso o time se afunda ainda mais <br> para continuar no Brasileirao vao ter que fazer uma campanha de campeao <br> conquistar pelo menos 46 pontos para nao cair. <br> No proximo dia 31/08, O sport pega o Vasco da Gama em recife e precisar ganhar <br> esse jogo vai valer 6 pontos.</p> 
+<h3 style="text-align: center;"> BRASILEIRAO <img src="brasileirao/taca-brasileirao-serie-a-logo-png_seeklogo-577657.png" alt="brasileirao" width="50px"></h3>
+<table id="tabelaTime"><thead>
+    <tr>
+        <th onclick="sorttable(0)">Time</th>
+        <th onclick="sorttable(1)">Jogos</th>
+        <th onclick="sorttable(2)">Vitorias</th>
+        <th onclick="sorttable(3)">Empates</th>
+        <th onclick="sorttable(4)">Derrotas</th>
+        <th onclick="sorttable(5)">Pontos</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+       <td>Flamengo</td>
+       <td>20</td>
+       <td>14</td>
+       <td>4</td>
+       <td>2</td>
+       <td>46</td>
+    </tr>
+    <tr><td>Palmeiras</td>
+        <td>19</td>
+        <td>13</td>
+        <td>3</td>
+        <td>3</td>
+        <td>42</td>
+    </tr>
+    <tr>
+        <td>Cruzeiro</td>
+        <td>21</td>
+        <td>12</td>
+        <td>5</td>
+        <td>4</td>
+        <td>41</td>
+    </tr>
+    <tr>
+        <td>Bahia</td>
+        <td>19</td>
+        <td>10</td>
+        <td>6</td>
+        <td>3</td>
+        <td>36</td>
+
+    </tr>
+    
+
+</tbody>
+<tbody style=" background-color: red;color: black;" >
+    <tr>
+        <td>Vitoria</td>
+        <td>21</td>
+        <td>3</td>
+        <td>10</td>
+        <td>8</td>
+        <td>19</td>
+    </tr>
+    <tr>
+        <td>Juventude</td>
+        <td>20</td>
+        <td>5</td>
+        <td>3</td>
+        <td>12</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>Fortaleza</td>
+        <td>20</td>
+        <td>3</td>
+        <td>6</td>
+        <td>11</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <td>Sport</td>
+        <td>19</td>
+        <td>1</td>
+        <td>7</td>
+        <td>11</td>
+        <td>15</td>
+    </tr>
+</tbody>
+</table>
+<script>
+        function toggleMenu(){ const menu = document.getElementById('menu');
+        menu.classList.toggle('show');
+
+        }
+    </script>
+    
+
+
+
+
+    
+</body>
+</html>  

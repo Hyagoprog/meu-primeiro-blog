@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog do Hyago</title>
+    <style>
+         nav {
+      background-color: #333;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .menu {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      margin-right: 20px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+    }
+
+    .menu a:hover {
+      background-color: #555;
+    }
+
+    
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      margin: 4px 0;
+    }
+    @media ( max-width:768px){ 
+        .menu{ display: none; flex-direction: column;
+        background-color: #333;
+    width: 100%;}
+    .menu.show{ display: flex;}
+    .hamburger{ display: flex;}
+        }
+        h1{ text-align: center; background-color: black;color: white;}
+        body{ font-size: large;background-color: black;color: white;}
+
+    </style>
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu" id="menu">
+            <li> <a href="pag01.html">Inicio</a></li>
+            <li><a href="brasileirao.html">Brasileirao</a></li>
+            <li><a href="sulamericana.html">Sulamericana</a></li>
+        </ul>
+    </nav>
+    <script>
+        function toggleMenu(){ const menu = document.getElementById('menu');
+        menu.classList.toggle('show');}
+
+    </script>
+    <h1> LIBERTADORES</h1>
+    <img src="libertadores/flamengo.jpg" width="350" alt="Flamengo">
+    <p>O Flamengo no ultimo jogo derrotou o internacional de porto alegre, e avançou<br>pras quartas de finais da copa libertadores, a equipe rubro negra foi dominante o tempo todo e conseguiu marcar dois gols. <br> O flamengo volta a copa para enfrentar o Estudiantes da Argentina.</p>
+    <img src="libertadores/palmeiras libertadores.webp" width="350" alt="palmeiras"> 
+    <p>O alviverde ficou no 0x0 contra o Universitarios na ultima partida <br>mas na partida de ida o verdao goleou a equipe da casa por 4x0 e assim <br> passou pras quartas de finais e vai pegar o River plate da Argentina.</p>
+    <img src="libertadores/sao paulo.jpg" alt="Sao paulo">
+    <p> Por sua vez o Sao Paulo volta a uma quarta de finais durante anos, apos derrotar o Atl.Nacional nos penalti, <br>o Sao paulo consegue ir para as quarta de finais aonde ira enfrentar a LDU, <br>que derrotou o time carioca botafogo.</p>
+    
+</body>
+</html>
